@@ -9,4 +9,4 @@ Members : Aditya Singh and Devam Singh
 
 Idea: Create a web portal where users can see the all government schemes.If they have any query they can post it and it would be answered by moderators. And a comment section to get queries answered by fellow mates.
 
-Tech Stack: HTML CSS JAVASCRIPT MyPHP SQL
+Tech Stack: HTML CSS JAVASCRIPT PHP MySQL
