@@ -86,81 +86,13 @@ if (isset($_POST['post_comment'])) {
             background-color: #3e8e41;
         }
 
-        h1 {
-            text-align: center;
-            color: crimson;
-        }
 
-        h2 {
-            color: red;
-        }
-
-        p {
-            color: rgb(243, 243, 255);
-        }
-
-        .image {
-            display: inline-block;
-            position: relative;
-            width: 400px;
-            left:9em; 
-        }
-
-        .image__img {
-            display: block;
-            width: 100%;
-            
-        }
-
-        .image__overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            color: #ffffff;
-            font-family: 'Quicksand', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.25s;
-        }
-        
-        .image__overlay--blur {
-	backdrop-filter: blur(5px);
-}
-
-        .image__overlay>* {
-            transform: translateY(20px);
-            transition: transform 0.25s;
-        }
-
-        .image__overlay:hover {
-            opacity: 1;
-        }
-
-        .image__overlay:hover>* {
-            transform: translateY(0);
-        }
-
-        .image__title {
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        .image__description {
-            font-size: 1.25em;
-            margin-top: 0.25em;
-        }
 
         body {
             background-color: rgb(202, 255, 255);
         }
 
-        .wrapper {
+    .wrapper {
 	background: white;
 	border-radius: 10px;
 	width: 500px;
@@ -234,22 +166,90 @@ if (isset($_POST['post_comment'])) {
 	margin-bottom: 15px;
 	width: 450px;
 }
+h1 {
+            text-align: center;
+            color: crimson;
+        }
 
-    </style>
+        h2 {
+            color: red;
+        }
+
+        p {
+            color: rgb(243, 243, 255);
+        }
+
+        .image {
+            display: inline-block;
+            position: relative;
+            width: 400px;
+            left:9em; 
+        }
+
+        .image__img {
+            display: block;
+            width: 100%;
+            
+        }
+
+        .image__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        
+        .image__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+        .image__overlay>* {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+
+        .image__overlay:hover {
+            opacity: 1;
+        }
+
+        .image__overlay:hover>* {
+            transform: translateY(0);
+        }
+
+        .image__title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .image__description {
+            font-size: 1.25em;
+            margin-top: 0.25em;
+        }
+</style>
 </head>
 
 <body style="margin-top: -0px;margin-left: -0px;margin-right: 0px;margin-bottom: 0px;">
     <script src="//code.tidio.co/zsurtwbieuvgc4aj2t138ql6s6zg3ckr.js" async></script>
     <nav>
-        <a class="links" href="#">HOME</a>
+        <a class="links" href="index.php">HOME</a>
         <a class="links" href="#">CONTACT US</a>
-        <a class="links" href="#">CENTRAL SCHME</a>
+        <a class="links" href="central.php">CENTRAL SCHME</a>
         <div class="dropdown-menu">
             <button class="menu-btn">STATES v </button>
                     <div class="menu-content">
-                        <a class="links-hidden" href="#">Uttar Pradesh</a>
-                        <a class="links-hidden" href="#">Bihar</a>
-                        <a class="links-hidden" href="#"> Punjab</a>
+                        <a class="links-hidden" href="up.php">Uttar Pradesh</a>
+                        <a class="links-hidden" href="bihar.php">Bihar</a>
+                        <a class="links-hidden" href="punjab.php"> Punjab</a>
                     </div>
         </div>
     </nav>
@@ -346,7 +346,7 @@ if (isset($_POST['post_comment'])) {
     </div>
 
     <h3><p style="padding: 2em;color: darkblue">and many more......</p></h3>
-
+    <center>
     <div class="wrapper">
 		<form action="" method="post" class="form">
 			<input type="text" class="name" name="name" placeholder="Name">
@@ -377,7 +377,7 @@ if (isset($_POST['post_comment'])) {
 			<?php }
 		} ?>
 	</div>
-</body>
+    </center>
     
 		<p style="background-color: #060606;
         padding: 20px;
