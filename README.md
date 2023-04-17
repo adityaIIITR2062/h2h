@@ -1,4 +1,4 @@
-# h2h
+# H2S
 Problem Statement: Connecting Beneficiaries of Government Health Schemes
 
 Description: Mobile App or platform to connect the beneficiaries of government health schemes in different states and answer their queries without any telephonic conversation.
